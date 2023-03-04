@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #78d378;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+}
+
+header {
+  color: red;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888;
+  background-color: red;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: blue;
+}
+
+nav {
+  background-color: red;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #00BFFF;
+}
+
+main img {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+main ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+footer {
+  color: red;
+  text-align: center;
+  background-color: red;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    padding: 1rem;
+  }
+}
